@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .form-group select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-right: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 10px center;
+            background-color: #fff;
+        }
+
+        .toggle-link {
+            margin-top: 15px;
+        }
+
+        .toggle-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .toggle-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function updatePlaceholder() {
+            const loginType = document.getElementById('loginType').value;
+            const identifierLabel = document.getElementById('identifierLabel');
+            const identifierInput = document.getElementById('identifier');
+            
+            // Change the placeholder and label based on the selected login type
+            if (loginType === 'username') {
+                identifierLabel.innerText = 'Username:';
+                identifierInput.placeholder = 'Enter your username';
+            } else if (loginType === 'email') {
+                identifierLabel.innerText = 'Email:';
+                identifierInput.placeholder = 'Enter your email';
+            } else if (loginType === 'phone') {
+                identifierLabel.innerText = 'Phone Number:';
+                identifierInput.placeholder = 'Enter your phone number';
+            }
+        }
+
+        // Attach the event listener to the dropdown when the page loads
+        window.onload = function() {
+            const loginTypeSelect = document.getElementById('loginType');
+            loginTypeSelect.addEventListener('change', updatePlaceholder);
+            updatePlaceholder(); // Set the default placeholder when the page loads
+        };
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST" action="{{ url_for('login') }}">
+            <!-- Login Type Selection -->
+            <div class="form-group">
+                <label for="loginType">Login Type:</label>
+                <select name="loginType" id="loginType" required>
+                    <option value="username">Username</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Number</option>
+                </select>
+            </div>
+
+            <!-- Identifier Input (Username, Email, or Phone) -->
+            <div class="form-group">
+                <label id="identifierLabel" for="identifier">Username / Email / Phone:</label>
+                <input type="text" name="identifier" id="identifier" placeholder="Enter your Username, Email or Phone" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="toggle-link">
+                <a href="{{ url_for('signup') }}">Don't have an account? Sign Up</a>
+            </div>
+
+            <!-- Error Message -->
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
