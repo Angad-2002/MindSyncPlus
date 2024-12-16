@@ -165,7 +165,8 @@ Dense (4 units) -> Softmax
 
 ### Video Demo
 
-A video walkthrough demonstrating the application’s functionality is available. Watch it [here](https://github.com/Angad-2002/MindSyncPlus/releases/download/v1.0/demo.mp4).
+A video walkthrough demonstrating the application’s functionality is available. 
+[![Watch the Video Demo](https://img.youtube.com/vi/A7GCzD2R4C0/maxresdefault.jpg)](https://youtu.be/A7GCzD2R4C0)
 
 
 ## Future Enhancements
