@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/202ecda0-bfb2-477e-ad3a-8bb2f93a6cce)# MindSyncPlus
+# MindSyncPlus
 
 MindSyncPlus is a web-based application designed to aid in detecting the stage of Alzheimer’s disease from MRI scans. The system integrates custom-built deep learning models with an intuitive user interface to provide accurate, stage-specific diagnoses and insights into Alzheimer’s progression.
 
@@ -148,7 +148,7 @@ Dense (4 units) -> Softmax
 
 1. **Home Page**:
 
-   ![WhatsApp Image 2024-12-16 at 21 08 28_7791bafa](https://github.com/user-attachments/assets/3fbdb13c-ae1d-4c5f-bd67-a3fefd4a4dd2)
+   ![image](https://github.com/user-attachments/assets/3fbdb13c-ae1d-4c5f-bd67-a3fefd4a4dd2)
 
 2. **Upload Section**:
    
