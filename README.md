@@ -147,16 +147,20 @@ Dense (4 units) -> Softmax
 ### Screenshots
 
 1. **Home Page**:
+
    ![WhatsApp Image 2024-12-16 at 21 08 28_7791bafa](https://github.com/user-attachments/assets/3fbdb13c-ae1d-4c5f-bd67-a3fefd4a4dd2)
 
 2. **Upload Section**:
+   
    ![image](https://github.com/user-attachments/assets/a502b76e-0827-4690-9240-d669b4f264f6)
    ![image](https://github.com/user-attachments/assets/9d57368b-0f9e-4657-9bf1-c92a63fc1a0a)
 
-4. **Results Page**:
+3. **Sign-Up/Login Page**:
+   
    ![image](https://github.com/user-attachments/assets/0066e79d-92da-4329-b921-b309bf839ff1)
 
-5. **Database Records**:
+4. **Results Page**:
+
    ![image](https://github.com/user-attachments/assets/596fa32d-bf2b-4481-8dce-7b3039c6d76f)
 
 ### Video Demo
