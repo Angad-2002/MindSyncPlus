@@ -1,4 +1,4 @@
-# MindSyncPlus
+![image](https://github.com/user-attachments/assets/202ecda0-bfb2-477e-ad3a-8bb2f93a6cce)# MindSyncPlus
 
 MindSyncPlus is a web-based application designed to aid in detecting the stage of Alzheimer’s disease from MRI scans. The system integrates custom-built deep learning models with an intuitive user interface to provide accurate, stage-specific diagnoses and insights into Alzheimer’s progression.
 
@@ -11,6 +11,7 @@ MindSyncPlus is a web-based application designed to aid in detecting the stage o
 - [Model Details](#model-details)
 - [Model Architectures](#model-architectures)
 - [Model Performance](#model-performance)
+- [Screenshots and Video](#screenshots-and-video)
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
 - [License](#license)
@@ -141,6 +142,27 @@ Dense (4 units) -> Softmax
 - **Metrics:** Evaluated using precision, recall, F1-score, and confusion matrix.
 - **Dataset:** Trained on publicly available Alzheimer’s MRI datasets, with preprocessing to ensure data quality.
 
+## Screenshots and Video
+
+### Screenshots
+
+1. **Home Page**:
+   ![WhatsApp Image 2024-12-16 at 21 08 28_7791bafa](https://github.com/user-attachments/assets/3fbdb13c-ae1d-4c5f-bd67-a3fefd4a4dd2)
+
+2. **Upload Section**:
+   ![image](https://github.com/user-attachments/assets/a502b76e-0827-4690-9240-d669b4f264f6)
+   ![image](https://github.com/user-attachments/assets/9d57368b-0f9e-4657-9bf1-c92a63fc1a0a)
+
+4. **Results Page**:
+   ![image](https://github.com/user-attachments/assets/0066e79d-92da-4329-b921-b309bf839ff1)
+
+5. **Database Records**:
+   ![image](https://github.com/user-attachments/assets/596fa32d-bf2b-4481-8dce-7b3039c6d76f)
+
+### Video Demo
+
+A video walkthrough demonstrating the application’s functionality is available. Watch it [here](https://github.com/Angad-2002/MindSyncPlus/demo.mp4).
+
 ## Future Enhancements
 
 - Integrate additional deep learning models to improve accuracy.
@@ -168,9 +190,9 @@ Contributions are welcome! To contribute:
 5. Create a pull request.
 
 ### Contributors
-- **Ashish**
-- **Siddharth**
-- **Angad Singh**
+- **Ashish** [GitHub](https://github.com/Angad-2002)
+- **Siddharth** [GitHub](https://github.com/Angad-2002)
+- **Angad Singh** [GitHub](https://github.com/Angad-2002)
 
 ## License
 
@@ -180,3 +202,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **Maintainer:** Angad Singh  
 [GitHub](https://github.com/Angad-2002) | [LinkedIn](https://linkedin.com/in/angad2002)
+
