@@ -196,8 +196,8 @@ Contributions are welcome! To contribute:
 5. Create a pull request.
 
 ### Contributors
-- **Ashish** [GitHub](https://github.com/Angad-2002)
-- **Siddharth** [GitHub](https://github.com/Angad-2002)
+- **Ashish** [GitHub](https://github.com/AshishBenny)
+- **Siddharth** [GitHub](https://github.com/Sidharth0811)
 - **Angad Singh** [GitHub](https://github.com/Angad-2002)
 
 ## License
